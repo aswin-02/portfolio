@@ -13,11 +13,11 @@ html {
 .button {
   background-color: white;
   cursor: pointer;
-  padding: 4px 9px;
+  padding: 8px 9px;
   border: none;
   font-size: 100%;
   color: black;
-  margin-top: -10px;
+  margin-top: -20px;
   margin-left: 30px;
   border-radius: 20px;
   transition: 200ms;
@@ -146,7 +146,7 @@ h1 {
 }
 
 .container-x .card .face.face1 .content {
-  opacity: 0.2;
+  opacity: 0.5;
   transition: 0.5s;
 }
 
@@ -200,11 +200,35 @@ h1 {
 
  
 .margin{
-  margin-left: 36%; 
+  margin-left: 36.5%; 
 }
 works{
   color: rgb(115, 1, 160);
 }
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 100px; 
+  background-image: linear-gradient(to bottom  , rgb(252, 252, 252) ,  rgb(75, 1, 160)); 
+}
+
+/* hover */
+::-webkit-scrollbar-thumb:hover {
+  background:  rgb(75, 1, 160) ;
+}
+
+
 @media only screen and (max-width: 600px) {
   .txt {
     font-size: xx-small;

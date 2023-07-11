@@ -1,0 +1,103 @@
+body {
+  background-image: url("/img/bg.png");
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+}
+html {
+  scroll-behavior: smooth;
+}
+/* background-image: linear-gradient(to bottom right, rgb(195, 0, 255),rgb(0, 110, 255)); */
+
+.button {
+  background-color: white;
+  cursor: pointer;
+  padding: 4px 9px;
+  border: none;
+  font-size: 100%;
+  color: black;
+  margin-top: -10px;
+  margin-left: 30px;
+  border-radius: 20px;
+  transition: 200ms;
+  box-shadow: 0px 5px 10px -5px rgb(68, 68, 68);
+  /* box-shadow:0px 5px 10px -5px rgb(122, 122, 122 */
+}
+
+.button:hover {
+  box-shadow: 0px 5px 10px -2px rgb(110, 0, 138);
+}
+.button:focus {
+  outline: none;
+}
+.text {
+  font-size: large;
+}
+.txt {
+  font-size: 100px;
+  margin-top: 90px;
+  color: blueviolet;
+  opacity: 0.1;
+  font-family: "Courier New", Courier, monospace;
+  user-select: none;
+  visibility: visible;
+}
+
+.hero{
+    position: relative;
+    animation: textmoveside 2s forwards;
+}
+
+@keyframes textmoveside {
+    0%   {right: 300px;}
+    100% {right: 0px;}
+  }
+h1 {
+  padding-top: 110px;
+}
+.hov:hover {
+  cursor: pointer;
+}
+.foc-us:focus {
+  outline: none;
+}
+
+.button-connect {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 10px 15px;
+  border: 1px solid rgb(115, 1, 160);
+  font-size: 100%;
+  color: rgb(115, 1, 160);
+  margin-top: 10px;
+  border-radius: 20px;
+  transition: 200ms;
+  box-shadow: 0px 5px 10px -5px rgb(68, 68, 68);
+    position: relative;
+    animation: moveup 2s forwards;
+}
+.button-connect:hover {
+    transform: scale(0.9);
+  background-color: rgb(115, 1, 160);
+  color: white;
+}
+.button-connect:focus{
+    outline: none;
+}
+@keyframes moveup {
+    0%   {top: 100px;}
+    100% {top: 0px;}
+  }
+.tech-txt{
+    position: relative;
+    animation: mymove 5s forwards; 
+}
+
+
+@media only screen and (max-width: 600px) {
+  .txt {
+    font-size: xx-small;
+    visibility: hidden;
+  }
+}

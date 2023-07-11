@@ -113,6 +113,7 @@ h1 {
   position: relative;
   cursor: pointer;
   border: none;
+  background-color: inherit;
 }
 
 .container-x .card .face {
@@ -164,7 +165,6 @@ h1 {
 
 .container-x .card .face.face2 {
   border-radius: 20px;
-
   position: relative;
   background: #fff;
   display: flex;
@@ -210,4 +210,13 @@ h1 {
     font-size: xx-small;
     visibility: hidden;
   }
+  /* my work cards */
+  .container-x .card .face {
+    width: 180px;
+    height: 180px;
+    }
+    
+.container-x .card .face.face2 {
+  font-size: small;
+}
 }

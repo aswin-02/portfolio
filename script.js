@@ -7,3 +7,6 @@ function git(){
 function mail(){
     window.open("mailto:aswinvijay325@gmail.com?subject = Feedback&body = Message");
 }
+function project(){
+    window.open("/projects.html")
+}

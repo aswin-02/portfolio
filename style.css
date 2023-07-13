@@ -213,6 +213,10 @@ works{
   color: rgb(115, 1, 160);
 }
 
+
+
+
+
 /* scroll bar */
 
 ::-webkit-scrollbar {
@@ -244,7 +248,7 @@ works{
   /* my work cards */
   .container-x .card .face {
     width: 160px;
-    height: 160px;
+    height: 160p  x;
     }
     
 .container-x .card .face.face2 {

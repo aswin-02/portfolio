@@ -130,9 +130,7 @@ h1 {
 }
 
 .container-x .card .face.face1 {
-  position: relative;
-  /* background: #ffffff;
-   */
+  position: relative;  
    background-image: linear-gradient(
     to bottom right,
     rgb(185, 110, 255),
@@ -246,9 +244,9 @@ works{
     visibility: hidden;
   }
   /* my work cards */
-  .container-x .card .face {
+  .container-x .card .face { 
     width: 160px;
-    height: 160p  x;
+    height: 160px;
     }
     
 .container-x .card .face.face2 {

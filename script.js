@@ -7,6 +7,11 @@ function git(){
 function mail(){
     window.open("mailto:aswinvijay325@gmail.com?subject = Feedback&body = Message");
 }
-function project(){
-    window.open("/projects.html")
+function movieFet(){
+    window.open("https://moviefetcher-bfcc8.web.app/");
+}
+
+function institution()
+{
+    window.open("https://srit.org/research-index.html");
 }

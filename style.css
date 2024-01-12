@@ -1,4 +1,4 @@
-body {
+  body {
   background-image: url("/img/bg.png");
   background-size: cover;
   height: 100vh;
@@ -53,6 +53,11 @@ html {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-left: 10px;
   color: rgb(114, 114, 114);
+}
+
+.head-text h2{
+  font-size: 15vh;
+  color: rgb(115, 1, 160);
 }
 
 @keyframes textmoveside {
@@ -113,7 +118,9 @@ h1 {
   width: 1000px;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
 }
 
 .container-x .card {
@@ -239,6 +246,16 @@ works{
 
 
 @media only screen and (max-width: 600px) {
+
+
+  .head-text h1{
+    font-size: 6vh;
+   }
+
+  .head-text h2{
+    font-size: 8vh;
+   }
+
   .txt {
     font-size: xx-small;
     visibility: hidden;

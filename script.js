@@ -10,8 +10,17 @@ function mail(){
 function movieFet(){
     window.open("https://moviefetcher-bfcc8.web.app/");
 }
-
+function movieFetGit(){
+    window.open("https://github.com/aswin-02/moviefetcher.git")
+}
 function institution()
 {
     window.open("https://srit.org/research-index.html");
+}
+function instagram()
+{
+    window.open("https://github.com/aswin-02/INSTA_LOGIN.git");
+}
+function store(){
+    window.open("https://github.com/aswin-02/simple-grocery-store.git");
 }

@@ -49,7 +49,7 @@ html {
   animation: textmoveside 2s forwards;
 }
 .hero-p{
-  font-size: larger;
+  font-size: 4vh;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-left: 10px;
   color: rgb(114, 114, 114);
@@ -59,6 +59,7 @@ html {
   font-size: 15vh;
   color: rgb(115, 1, 160);
 }
+ 
 
 @keyframes textmoveside {
   0% {
@@ -101,6 +102,72 @@ h1 {
 .button-connect:focus {
   outline: none;
 }
+
+
+.button-code {
+  background-color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: none;
+  font-size: 100%;
+  color: rgb(126, 9, 155);
+  border: 1px solid rgb(126, 9, 155);
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 20px;
+  transition: 200ms;
+  box-shadow: 0px 5px 10px -5px rgb(68, 68, 68);
+  position: relative;
+  animation: moveup 2s forwards;
+}
+.button-code:hover {
+  background-image: linear-gradient(
+  to bottom right,
+  rgb(185, 110, 255),
+  rgb(0, 30, 197)
+);
+  transform: scale(0.9); 
+  border:1px solid transparent;
+  color: white;
+}
+.button-code:focus {
+  outline: none;
+}
+
+
+
+.button-goto {
+  background-image: linear-gradient(
+  to bottom right,
+  rgb(185, 110, 255),
+  rgb(0, 30, 197)
+);
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  font-size: 100%;
+  color: rgb(255, 255, 255); 
+  border-radius: 20px;
+  transition: 200ms;
+  box-shadow: 0px 5px 10px -5px rgb(68, 68, 68);
+  position: relative;
+  animation: moveup 2s forwards;
+}
+.button-goto:hover {
+  transform: scale(0.9);
+  background-image: none;
+  background-color: white;
+  border:1px solid  rgb(126, 9, 155);
+
+  color: rgb(126, 9, 155);
+
+}
+.button-goto:focus {
+  outline: none;
+}
+
+
+
 @keyframes moveup {
   0% {
     top: 100px;
@@ -124,8 +191,7 @@ h1 {
 }
 
 .container-x .card {
-  position: relative;
-  cursor: pointer;
+  position: relative; 
   border: none;
   background-color: inherit;
 }
@@ -194,6 +260,11 @@ h1 {
   transform: translateY(0);
 }
 
+.container-x  .card:focus .face.face2 {
+  transform: translateY(0);
+}
+
+
 .container-x .card .face.face2 .content p {
   margin: 0;
   padding: 0;
@@ -214,12 +285,19 @@ h1 {
 .margin{
   margin-left: 36.5%; 
 }
+
 works{
   color: rgb(115, 1, 160);
 }
 
 
-
+.about-container{
+  background-image: linear-gradient(
+    to top left,
+    rgb(104, 21, 182),
+    rgb(0, 30, 197)
+  );
+}
 
 
 /* scroll bar */
@@ -272,4 +350,19 @@ works{
 .margin{
   margin-left: 0%;
 }
+
+.container-x .card .face.face2 {
+  transform: translateY(-80px);
+
+}
+
+
+.container-x .card .face {
+  width: 250px;
+}
+
+.about-container p{
+  font-size: 3vh;
+}
+
 }

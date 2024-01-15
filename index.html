@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/animate.css" />
     <link rel="stylesheet" href="/shapeslide.css" />
     <link rel="stylesheet" href="/skills.css" />
+    <link rel="stylesheet" href="/bgPattern.css" />
+
 
     <link
       rel="stylesheet"
@@ -14,6 +16,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -70,8 +73,9 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="nav navbar-nav d-inline-flex">
           <a class="nav-link hov font-weight-bold">HOME</a>
+          <a class="nav-link hov font-weight-bold" href="#techstack">SKILLS</a>
           <a class="nav-link hov font-weight-bold" href="#projects">PROJECTS</a>
-          <a class="nav-link hov font-weight-bold">ABOUT</a>
+          <a class="nav-link hov font-weight-bold" href="#about">ABOUT</a>
           <li class="nav-link">
             <button class="button" onclick="linkedin()">
               <img src="/img/linkedin.svg" height="25" width="25" />
@@ -89,11 +93,11 @@
 
     <!-- hero section -->
     <div class="container head-text">
-      <h1 class="display-3 hero" style="animation-delay: -50ms">
+      <h1 class="display-3 hero mt-5">
         <code style="color: rgb(99, 99, 99)">le</code> Aswin
       </h1>
-      <h2 class="display-2 hero">Web Developer</h2>
-      <p class="hero hero-p">
+      <h2 class="tech-txt hero">Web Developer</h2>
+      <p class="hero hero-p" style="animation: textmoveside 2.5s forwards">
         I enjoy developing high-quality, user-friendly websites.
       </p>
       <button class="button-connect" onclick="linkedin()">Connect</button>
@@ -103,10 +107,9 @@
     <!-- slider  -->
     <div class="reveal fade-left">
       <img
-        id="techstack"
         src="/img/bg_line2.png"
         style="
-          padding-top: 100px;
+          padding-top: 10px;
           user-select: none;
           -webkit-user-drag: none;
           max-width: 100%;
@@ -116,10 +119,8 @@
 
     <!-- tech stack -->
 
-    <div class="container">
-      <h1 class="display-4 text-capitalize tech-txt">
-        Tech <works>stack</works>
-      </h1>
+    <div id="techstack" class="container">
+      <h1 class="text-capitalize tech-txt">Tech <works>stack</works></h1>
       <br />
       <p class="hero-p">
         These are the tools, languages, and frameworks I use on a regular basis.
@@ -224,7 +225,6 @@
     <!-- slider  -->
     <div class="reveal fade-left">
       <img
-        id="projects"
         src="/img/bg_line2.png"
         style="
           padding-top: 100px;
@@ -237,10 +237,8 @@
 
     <!-- my works -->
 
-    <div class="container">
-      <h1 class="display-4 text-capitalize tech-txt">
-        My <works>works</works>
-      </h1>
+    <div class="container" id="projects">
+      <h1 class="text-capitalize tech-txt">My <works>works</works></h1>
       <br />
       <br />
 
@@ -311,7 +309,7 @@
                 deceive users due to its identical visual resemblance.
               </p>
               <br />
-              <a class="pb-2">Insta login page</a>
+              <a class="pb-2">Instagram login</a>
               <br />
               <button class="button-code" onclick="instagram()">code</button>
             </div>
@@ -352,24 +350,58 @@
 
     <!-- About me -->
 
-    <div class="container-fluid bg-dark about-container">
-      <div class="container ">
-        <h1 class="display-4 text-capitalize tech-txt text-center text-light">
-          A Little About Myself
-
-        </h1>
-        <br />
-        <p class="hero-p text-light text-center">
-          Hi, My name is Aswin, and I am currently pursuing a Bachelor's degree in
-          Engineering at Sri Ramakrishna Institute of Technology. As an
-          enthusiastic individual with a passion for technology, I am eager to
-          delve into the world of emerging technologies and gain practical
-          experience. My ultimate objective is to lead my field to greatness. I
-          am currently seeking opportunities for software development
-          internships and full-time roles to further enhance my skills and
-          contribute to meaningful projects.
-        </p>
-      </div>
-    </div>
+    <br>
+    
+    
+    
+    
   </body>
+  <footer>
+    <div class="background">
+      <span></span>
+      <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class=" about-container text-center" id="about">
+        <div class="about-text text-center glass-card ">
+          <h1>A Little About Myself</h1>
+          <br />
+          <div class="text-center about-para">
+            <p class="hero-p text-light w-75 pb-5">
+              Hi, <br />
+              I'm <code class="text-light">Aswin</code>, pursuing a Bachelor's in
+              Computer Science at Sri Ramakrishna Institute of Technology.
+              Enthusiastic about technology, I aim to excel in emerging
+              technologies. Currently seeking software development internships and
+              full-time roles to enhance skills and contribute to meaningful
+              projects.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+      <div class="triangle">
+        <p class="text-center p-2 ">Designed and Developed by Aswin</p>
+      </div>
+      </div>
+    </footer>
+
+    
 </html>

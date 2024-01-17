@@ -9,51 +9,12 @@
     <link rel="stylesheet" href="/skills.css" />
     <link rel="stylesheet" href="/bgPattern.css" />
 
-
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
-
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="/script.js"></script>
-    <script src="/animate.js"></script>
 
     <link rel="icon" href="/img/logo-white.png" />
     <title>Aswin</title>
@@ -72,10 +33,11 @@
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="nav navbar-nav d-inline-flex">
-          <a class="nav-link hov font-weight-bold">HOME</a>
           <a class="nav-link hov font-weight-bold" href="#techstack">SKILLS</a>
           <a class="nav-link hov font-weight-bold" href="#projects">PROJECTS</a>
           <a class="nav-link hov font-weight-bold" href="#about">ABOUT</a>
+          <a class="nav-link hov font-weight-bold" href="#contact">CONTACT</a>
+
           <li class="nav-link">
             <button class="button" onclick="linkedin()">
               <img src="/img/linkedin.svg" height="25" width="25" />
@@ -96,16 +58,60 @@
       <h1 class="display-3 hero mt-5">
         <code style="color: rgb(99, 99, 99)">le</code> Aswin
       </h1>
-      <h2 class="tech-txt hero">Web Developer</h2>
+      <h2 class="tech-txt hero dev">Web Developer</h2>
       <p class="hero hero-p" style="animation: textmoveside 2.5s forwards">
         I enjoy developing high-quality, user-friendly websites.
       </p>
       <button class="button-connect" onclick="linkedin()">Connect</button>
+      <button class="button-cv" onclick="cv()">Download CV</button>
+
       <p class="txt">hello world;</p>
     </div>
 
+    <div class="fade-in-text">
+      <div class="background mt-5">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="about-container text-center" id="about">
+          <div class="about-text text-center glass-card">
+            <h1>A Little About Myself</h1>
+            <br />
+            <div class="text-center about-para">
+              <p class="hero-p text-light w-75 pb-5">
+                Hi, <br />
+                I'm <strong class="text-light">Aswin</strong>, pursuing a
+                Bachelor's in Computer Science at Sri Ramakrishna Institute of
+                Technology. Enthusiastic about technology, I aim to excel in
+                emerging technologies. Currently seeking software development
+                internships and full-time roles to enhance skills and contribute
+                to meaningful projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- slider  -->
-    <div class="reveal fade-left">
+    <!-- <div class="reveal fade-left">
       <img
         src="/img/bg_line2.png"
         style="
@@ -115,11 +121,11 @@
           max-width: 100%;
         "
       />
-    </div>
+    </div> -->
 
     <!-- tech stack -->
 
-    <div id="techstack" class="container">
+    <div id="techstack" class="container mt-5">
       <h1 class="text-capitalize tech-txt">Tech <works>stack</works></h1>
       <br />
       <p class="hero-p">
@@ -252,14 +258,11 @@
 
           <div class="face face2">
             <div class="content">
-              <br />
-              <br />
               <p>
                 A website develped with react ,which previews real-time details
                 from TMDB, highlighting my front-end and API integration skills.
               </p>
-
-              <a>Movie Fetcher</a>
+              <a class="mt-2">Movie Fetcher</a>
               <br />
               <!-- <div class="d-inline-flex mt-2"> -->
               <button class="button-goto" onclick="movieFet()">Goto</button>
@@ -280,15 +283,12 @@
             <!-- style="margin-top: -20px;" heeeh -->
             <div class="content">
               <br />
-              <br />
-              <p class="pt-3">
+              <p>
                 Contributed to web pages on our institution's official site
                 within the Research cluster domain.
               </p>
-
-              <a class="pt-4 pb-3">Institution website</a>
+              <a class="mb-3" style="margin-top: 12%">Institution website</a>
               <br />
-
               <button class="button-goto" onclick="institution()">Goto</button>
             </div>
           </div>
@@ -301,15 +301,12 @@
             </div>
           </div>
           <div class="face face2">
-            <br />
             <div class="content">
-              <br />
-              <p class="pt-3">
+              <p>
                 A well-constructed replica of Instagram's login page designed to
                 deceive users due to its identical visual resemblance.
               </p>
-              <br />
-              <a class="pb-2">Instagram login</a>
+              <a>Instagram login</a>
               <br />
               <button class="button-code" onclick="instagram()">code</button>
             </div>
@@ -322,16 +319,14 @@
               <img src="/img/shop.svg" height="100px" width="100px" />
             </div>
           </div>
-          <br />
           <div class="face face2">
             <div class="content">
-              <p>
+              <p class="mt-2">
                 A prototype that is developed to experience the convenience of
                 easy-to-use online grocery system.
               </p>
-
-              <a class="pt-4">Online grocery Store</a>
-              <br />
+              
+              <a class="mt-4">Online grocery Store</a>
               <button class="button-code" onclick="store()">code</button>
             </div>
           </div>
@@ -344,64 +339,105 @@
       <div class="content"></div>
     </div>
 
-    <br />
-    <br />
-    <br />
+    <!-- contact -->
 
-    <!-- About me -->
-
-    <br>
-    
-    
-    
-    
-  </body>
-  <footer>
-    <div class="background">
-      <span></span>
-      <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class=" about-container text-center" id="about">
-        <div class="about-text text-center glass-card ">
-          <h1>A Little About Myself</h1>
-          <br />
-          <div class="text-center about-para">
-            <p class="hero-p text-light w-75 pb-5">
-              Hi, <br />
-              I'm <code class="text-light">Aswin</code>, pursuing a Bachelor's in
-              Computer Science at Sri Ramakrishna Institute of Technology.
-              Enthusiastic about technology, I aim to excel in emerging
-              technologies. Currently seeking software development internships and
-              full-time roles to enhance skills and contribute to meaningful
-              projects.
-            </p>
-          </div>
+    <div class="anime-bg secondary-bg ">
+      <div class="d-flex justify-content-center ">
+        <div class="contact-card" id="contact">
+          <h1><b>Get in Touch</b></h1>
+          <p>
+            I'm actively seeking new opportunities, and my inbox is always open.
+            Whether you're interested in potential collaboration or simply wish
+            to have a conversation, feel free to reach out.<br />
+            I'll buy the coffee.
+          </p>
+          <li class="contact-buttons">
+            <button class="button" onclick="linkedin()">
+              <img src="/img/linkedin.svg" height="25" width="25" />
+            </button>
+            <button class="button" onclick="git()">
+              <img src="/img/github.svg" width="25" height="25" />
+            </button>
+            <button class="button" onclick="mail()">
+              <img src="/img/envelope-fill.svg" height="25" width="25" />
+            </button>
+          </li>
         </div>
       </div>
-      <div class="d-flex justify-content-center">
-      <div class="triangle">
-        <p class="text-center p-2 ">Designed and Developed by Aswin</p>
-      </div>
-      </div>
-    </footer>
+    </div>
+  </body>
 
-    
+  <div class="d-flex justify-content-center"
+    <div>
+      <p class="dev text-center pt-2">Designed and Developed by Aswin</p>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+  <script src="/animate.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDgdiB4teTUhoPD8ay6LlwVTUvtWILi5No",
+      authDomain: "portfolio-a8dca.firebaseapp.com",
+      projectId: "portfolio-a8dca",
+      storageBucket: "portfolio-a8dca.appspot.com",
+      messagingSenderId: "1034435524849",
+      appId: "1:1034435524849:web:3bf6e132d60a6518845150",
+      measurementId: "G-TQRHC0WNWY"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+
+  <script
+    data-who="background naker.io"
+    src="https://d23jutsnau9x47.cloudfront.net/back/v1.0.9/viewer.js"
+    data-option="{|environment|:{|gradient|:|radial|,|sensitivity|:0.62,|colorStart|:[31,9,108,1],|colorEnd|:[122,13,123,1]},|particle|:{|life|:5,|power|:0.024,|texture|:|https://res.cloudinary.com/naker-io/image/upload/v1566560053/star_01.png|,|number|:246,|colorStart|:[116,129,92,0.13],|colorEnd|:[198,188,107,0.52],|sizeStart|:1.13,|sizeEnd|:2.26,|direction1|:{|x|:0,|y|:100,|z|:100},|direction2|:{|x|:0,|y|:0,|z|:0}},|waterMark|:false}"
+    data-container=".anime-bg"
+  ></script>
 </html>

@@ -15,3 +15,20 @@ function reveal() {
   }
   
   window.addEventListener("scroll", reveal);
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var fadeElement = document.querySelector('.fade-in-text');
+
+  function fadeInOnScroll() {
+    var scrollPosition = window.scrollY;
+    var elementPosition = fadeElement.offsetTop;
+
+    if (scrollPosition > elementPosition - window.innerHeight / 2) {
+      fadeElement.classList.add('fade-in');
+    }
+  }
+
+  window.addEventListener('scroll', fadeInOnScroll);
+});

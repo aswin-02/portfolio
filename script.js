@@ -24,3 +24,8 @@ function instagram()
 function store(){
     window.open("https://github.com/aswin-02/simple-grocery-store.git");
 }
+
+function cv(){
+    window.open("https://drive.google.com/file/d/12UWf4VyraMkOv1fnpHD8S7qGWXSCczbw/view?usp=sharing");
+}
+

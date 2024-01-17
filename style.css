@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 body {
   background-image: url("/img/bg.png");
   background-size: cover;
@@ -50,7 +57,7 @@ html {
 }
 
 .hero-p {
-  font-size: 3vh;
+  font-size: x-large;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(119, 119, 119);
 }
@@ -86,15 +93,15 @@ h1 {
   outline: none;
 }
 
-.button-connect {
+.button-connect,
+.button-cv {
   background-color: rgb(255, 255, 255);
   cursor: pointer;
   padding: 10px 15px;
   border: 1px solid rgb(115, 1, 160);
   font-size: 100%;
   color: rgb(115, 1, 160);
-  margin-top: 10px;
-  margin-left: 10px;
+  margin-top: 2%;
   border-radius: 20px;
   transition: 200ms;
   box-shadow: 0px 5px 10px -5px rgb(68, 68, 68);
@@ -107,6 +114,21 @@ h1 {
   color: white;
 }
 .button-connect:focus {
+  outline: none;
+}
+
+.button-cv {
+  color: white;
+  margin-left: 2%;
+  background-color: rgb(126, 9, 155);
+}
+
+.button-cv:hover {
+  transform: scale(0.9);
+  background-color: rgb(255, 255, 255);
+  color: rgb(126, 9, 155);
+}
+.button-cv:focus {
   outline: none;
 }
 
@@ -181,11 +203,12 @@ h1 {
 .tech-txt {
   position: relative;
   animation: mymove 5s forwards;
-  font-size: 4vw;
+  font-size: xxx-large;
 }
 
 .container-x {
-  width: 1000px;
+  /* width: 1000px; */
+
   position: relative;
   display: flex;
   align-items: center;
@@ -196,6 +219,7 @@ h1 {
 .container-x .card {
   position: relative;
   border: none;
+
   background-color: inherit;
 }
 
@@ -247,15 +271,16 @@ h1 {
 }
 
 .container-x .card .face.face2 {
+  height: auto;
   border-radius: 20px;
   position: relative;
-  background: #fff;
+  background: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  transform: translateY(-100px);
+  transform: translateY(-110px);
 }
 
 .container-x .card:hover .face.face2 {
@@ -282,8 +307,12 @@ h1 {
   border: none;
 }
 
-.content a{
-  font-size: 1.5vw;
+.content a {
+  font-size: x-large;
+}
+
+.content p {
+  font-size: medium;
 }
 
 .margin {
@@ -299,16 +328,12 @@ works {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* background-image: linear-gradient(
-    to top left,
-    rgb(142, 47, 231),
-    rgb(0, 30, 197)
-  ); */
   background-color: transparent;
+  z-index: -1;
 }
 
 .about-text h1 {
-  font-size: 6vh;
+  font-size: x-larger;
   color: rgb(255, 255, 255);
 }
 
@@ -317,27 +342,60 @@ works {
   margin-bottom: 7%;
   width: 60%;
   border-radius: 30px;
-  /* border:1px solid white ; */
   border-top-style: groove;
   border-bottom-style: groove;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
   transition: 100ms;
+  animation: moveup 2s forwards;
+}
+
+.fade-in-text {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.anime-bg {
+  height: auto;
+  width: auto;
+  z-index: -1;
+}
+
+.secondary-bg {
+  height: auto;
+  width: auto;
+  background-color: rgb(115, 1, 160);
+  z-index: -1;
+}
+
+.contact-card {
+  height: auto;
+  width: 50vw;
+  color: white;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  z-index: 1;
+}
+
+.contact-card p {
+  padding: 5%;
+  font-size: x-large;
+}
+
+.contact-buttons {
+  list-style: none;
+  margin-right: 5%;
+  margin-bottom: 5%;
 }
 
 /* triangle div */
-.triangle {
-  width: 25%;
-  height: 0;
-  color: white;
-  font-size: 2.5vb;
-  margin-top: 12%;
-  background-color: rgb(100, 5, 189);
-  border-top: 50px solid white;
-  border-left: 30px solid white;
-  border-right: 30px solid white; /* Changed from border-left to border-right */
-  border-bottom: 50px solid transparent;
+.dev {
+  font-family: 'Courier Prime', monospace;
 }
-
 
 /* scroll bar */
 
@@ -380,8 +438,8 @@ works {
   }
   /* my work cards */
   .container-x .card .face {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 250px;
   }
 
   .container-x .card .face.face2 {
@@ -392,11 +450,11 @@ works {
   }
 
   .container-x .card .face.face2 {
-    transform: translateY(-80px);
+    transform: translateY(-120px);
   }
 
   .container-x .card .face {
-    width: 250px;
+    width: 300px;
   }
 
   .tech-txt {
@@ -416,15 +474,29 @@ works {
     width: 95%;
   }
 
-  .content a{
+  .content a {
     font-size: 5vw;
   }
 
-  .triangle{
+  .triangle {
     line-height: 12px;
     border-bottom: 40px solid transparent;
     width: 50%;
     font-size: 1.5vb;
   }
+
+  .contact-card {
+    margin-top: 5%;
+    background-color: inherit;
+    margin-bottom: 7%;
+    color: white;
+    border-radius: 0px;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+  }
   
+  .dev{
+    font-size: small;
+  }
 }

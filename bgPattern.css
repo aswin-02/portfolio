@@ -6,20 +6,21 @@
 
 
 .background { 
-    position: absolute;
     width: 100%;
     /* bottom: 0; */
-    height: 80vh;
+    height: auto;
+    position: relative;
     background-image: linear-gradient(
     to top left,
-    rgb(0, 30, 197),
-    rgb(142, 47, 231)
+    rgb(20, 39, 143),
+    rgb(97, 8, 180)
   );
     overflow: hidden;
-    z-index: -2;
+    z-index: 1;
 }
 
 .background span {
+    z-index: -1;
     width: 20vmin;
     height: 20vmin;
     border-radius: 20vmin;
